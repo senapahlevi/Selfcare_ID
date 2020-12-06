@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {View,Image,TextInput,Text,StyleSheet,StatusBar} from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 import 'react-native-gesture-handler';
 import Constants from 'expo-constants';
 

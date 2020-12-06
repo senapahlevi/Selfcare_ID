@@ -1,52 +1,11 @@
-
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-
-
-import SearchBar from './components/SearchBar';
-import BlockCard from './components/CardNews';
-import FeaturedNews from './components/FeaturedNews';
-import SmallCard from './components/SmallCard';
-import BreakingNews from './components/BreakingNews';
-import TechNews from './components/TechNews';
-import Screen from './Screen/ScreenView';
-import data from './components/DataDummy';
-import { MainStackMenu } from './components/MainStackMenu';
-import MainTodo from './components/MainTodo';
-import NoteTodoList from './components/NoteTodoList';
-//import FirebaseChat from './Screen/FirebaseChat';
-
-const App = () => {  
-   return (
-<NavigationContainer>
-      <MainStackMenu/>
-</NavigationContainer>
-   );
-}
-
-export default App;
- /*<FirebaseChat />
-<NavigationContainer><MainPayment/>
-  </NavigationContainer>
-  <LoginScreen/>
-      <LoginScreen/>
-  
- */
-      
-
-
-
-/*
 //@refresh reset
+/*
 import React, { useState, useEffect, useCallback } from 'react';
 import { GiftedChat } from 'react-native-gifted-chat';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { StyleSheet, TextInput, View,LogBox, Button } from 'react-native';
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 import 'firebase/firestore';
-import firebase from 'firebase/app';
-import 'firebase/auth';
 
 const firebaseConfig = {
 
@@ -65,7 +24,7 @@ const firebaseConfig = {
 
   const db = firebase.firestore()
   const chatsRef = db.collection('chats')
-export default function App() {
+export default function FirebaseChat() {
   const [user, setUser] = useState(null)
     const [name, setName] = useState('')
     const [messages, setMessages] = useState([])
@@ -141,5 +100,4 @@ export default function App() {
       borderColor:'gray',
     },
   })
-
-  */
+*/

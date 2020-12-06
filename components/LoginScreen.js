@@ -15,7 +15,7 @@ function LoginScreen() {
   return (
     <View style = {styles.container}>
     <Text style = {styles.title_brand}>
-    Senpay</Text>
+    SELF CARE ID</Text>
     <TextInput
     style = {styles.input}
     placeholder = "Email"
@@ -29,7 +29,7 @@ function LoginScreen() {
     style = {styles.button}
     title = "Login"
     onPress={() => 
-      navigation.navigate('Home')
+      navigation.navigate('Homee')
     }
     />
     <Text

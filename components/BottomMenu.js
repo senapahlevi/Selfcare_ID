@@ -2,13 +2,14 @@ import * as React from 'react';
 import { Text, View,SafeAreaView } from 'react-native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Constant from 'expo-constants';
+//import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import HomeScreen from './HomeScreen';
 import TransactionScreen from './TransactionScreen';
 import PersonalScreen from './PersonalScreen';
-import styles from './Styles';
+import NoteTodoList from './NoteTodoList';
+import Gratitude from './Gratitude';
+import Timer from './Timer';
 const Tab = createMaterialBottomTabNavigator();
 
 function BottomMenu() {
@@ -24,23 +25,44 @@ function BottomMenu() {
       name="Home"
       component = {HomeScreen}
       options = {{
-        tabBarLabel :'Baghdad',
+        tabBarLabel :'Home',
         tabBarIcon :({color})=> (
           <MaterialCommunityIcons name = "home" color={color} size={26}/>
         ),
       }}
     />
     <Tab.Screen
-      name = "Transaction"
-      component = {TransactionScreen}
+      name = "Gratitude"
+      component = {Gratitude}
       options = {{
-        tabBarLabel:'Transaction',
+        tabBarLabel:'Gratitude',
         tabBarIcon:({color})=>(
           <MaterialCommunityIcons name = "history" color = {color} size = {26}/>
         ),
       }}
     />
-    <Tab.Screen
+   
+     <Tab.Screen
+      name = "DailyList"
+      component ={NoteTodoList}
+      options={{
+        tabBarLabel:'Journal',
+        tabBarIcon:({color})=>(
+        <MaterialCommunityIcons name="notebook-multiple" size={25} color={color} />    
+    ),
+      }}
+    />
+     <Tab.Screen
+      name = "Relax"
+      component ={Timer}
+      options={{
+        tabBarLabel:'Meditation',
+        tabBarIcon:({color})=>(
+          <MaterialCommunityIcons name="heart-pulse" size={24} color={color} />    
+    ),
+      }}
+    />
+   <Tab.Screen
       name = "Personal"
       component ={PersonalScreen}
       options={{

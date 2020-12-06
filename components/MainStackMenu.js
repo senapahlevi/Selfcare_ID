@@ -5,10 +5,10 @@ import LoginScreen from './LoginScreen';
 import HomeScreen from '../components/HomeScreen';
 import PersonalScreen from './PersonalScreen';
 import RegisterScreen from './RegisterScreen';
-import {QrCode,KonfirmasiBayar,Paymentinfo} from '../buttonstack/QrCode';
-import MainPayment from './MainPayment';
-import { TopUpBerhasil,TopUp } from "./SearchBar";
+import BottomMenu from './BottomMenu';
 import  {Transfer,TransferBerhasil} from './TransferScreen';
+import ChatScreen from "../Screen/ChatScreen";
+import FirebaseChat from "../Screen/FirebaseChat";
 
 const Stack = createStackNavigator();
  /*<Stack.Screen
@@ -22,43 +22,33 @@ const MainStackMenu = () =>{
             <Stack.Screen
             name = "Login"
             component = {LoginScreen}
-            />
+            options={{title:null}}
+            /> 
+            <Stack.Screen
+              name ="Homee"
+              component = {BottomMenu}
+              options={{title:null}}
+              />
+
             <Stack.Screen
               name ="Register"
               component = {RegisterScreen}
               /> 
-           <Stack.Screen
-              name ="Home"
-              component = {MainPayment}
-              />
-               <Stack.Screen
-              name ="TopUP"
-              component = {TopUp}
-              />
-            <Stack.Screen
-              name ="TopUpBerhasil"
-              component = {TopUpBerhasil}
-              />
+          
              <Stack.Screen
               name ="Transfer"
               component = {Transfer}
               />
+                 <Stack.Screen
+            name = "Konsultasi"
+            component = {FirebaseChat}
+            options={{title:null}}
+            /> 
                <Stack.Screen
               name ="TransferBerhasil"
               component = {TransferBerhasil}
               />
-              <Stack.Screen
-              name ="QrCode"
-              component = {QrCode}
-              />
-               <Stack.Screen
-              name ="KonfirmasiBayar"
-              component = {KonfirmasiBayar}
-              />
-               <Stack.Screen
-              name ="Paymentinfo"
-              component = {Paymentinfo}
-              />
+             
     </Stack.Navigator>
     );
 };

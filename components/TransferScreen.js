@@ -12,7 +12,7 @@ const Transfer = () => {
         <View style = {{flex:1}}>
             <View style = {styles.containerImage}>
                 <Image 
-                    source = {require('../assets/konfbayar.png')}/>
+                    source = {require('../assets/icon.png')}/>
             </View>
             
             <View style = {styles.containerContent}>
@@ -35,7 +35,7 @@ const TransferBerhasil = () => {
         <View style = {{flex:1}}>
             <View style = {styles.containerImage}>
                 <Image
-                    source = {require('../assets/konfbayar.png')}/>
+                    source = {require('../assets/icon.png')}/>
             </View>
             <View style = {styles.containerContent}>
                 <Text style = {styles.textTopUpHeader}>TransferBerhasil</Text>
