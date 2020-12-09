@@ -14,7 +14,7 @@ export default function ChatScreen() {
 
       <Modal
         isVisible={isModalVisible}
-        onBackdropPress={() => setModalVisible(false)}
+        onBackdropPress={() => setModalVisible(true)}
       >
         <View style={styles.modal}>
           <ChatWidget
@@ -24,8 +24,8 @@ export default function ChatScreen() {
             greeting="Selamat datang silahkan konsultasi dengan psikologi kami yang terbaik"
             baseUrl="https://app.papercups.io"
             customer={{
-              name: 'Test User',
-              email: 'test@test.com',
+              name: 'Teja',
+              email: 'sensowner@gmail.com',
               external_id: '123',
             }}
           />

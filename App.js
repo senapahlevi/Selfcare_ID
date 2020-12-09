@@ -15,18 +15,18 @@ import data from './components/DataDummy';
 import { MainStackMenu } from './components/MainStackMenu';
 import MainTodo from './components/MainTodo';
 import NoteTodoList from './components/NoteTodoList';
-//import FirebaseChat from './Screen/FirebaseChat';
+import TabNewsScreen from './Screen/TabNewsScreen';
 
 const App = () => {  
    return (
-<NavigationContainer>
+   <NavigationContainer>
       <MainStackMenu/>
-</NavigationContainer>
+</NavigationContainer> 
    );
 }
 
 export default App;
- /*<FirebaseChat />
+ /*<TabNewsScreen/>
 <NavigationContainer><MainPayment/>
   </NavigationContainer>
   <LoginScreen/>
