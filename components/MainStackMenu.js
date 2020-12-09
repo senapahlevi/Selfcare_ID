@@ -8,7 +8,7 @@ import RegisterScreen from './RegisterScreen';
 import BottomMenu from './BottomMenu';
 import  {Transfer,TransferBerhasil} from './TransferScreen';
 import ChatScreen from "../Screen/ChatScreen";
-import FirebaseChat from "../Screen/FirebaseChat";
+import TabNewsScreen from "../Screen/TabNewsScreen";
 
 const Stack = createStackNavigator();
  /*<Stack.Screen
@@ -35,13 +35,17 @@ const MainStackMenu = () =>{
               component = {RegisterScreen}
               /> 
           
+           <Stack.Screen
+              name ="News"
+              component = {HomeScreen}
+              /> 
              <Stack.Screen
               name ="Transfer"
               component = {Transfer}
               />
-                 <Stack.Screen
+              <Stack.Screen
             name = "Konsultasi"
-            component = {FirebaseChat}
+            component = {ChatScreen}
             options={{title:null}}
             /> 
                <Stack.Screen
